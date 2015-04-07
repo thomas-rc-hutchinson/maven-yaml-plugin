@@ -1,0 +1,16 @@
+<project>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-yaml-plugin</artifactId>
+				<configuration>
+				<resources>
+					<resource>
+						<directory>src/test/resources/test_properties</directory>
+					</resource>
+				</resources>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

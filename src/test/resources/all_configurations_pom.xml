@@ -1,0 +1,40 @@
+<project>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-yaml-plugin</artifactId>
+				<configuration>
+				<resources>
+					<resource>
+						<directory>src/test/resources/test_properties</directory>
+						<includes>
+							<includes>i1</includes>
+							<includes>i2</includes>
+							<includes>i3</includes>
+						</includes>
+						<excludes>
+							<exclude>e1</exclude>
+							<exclude>e2</exclude>
+							<exclude>e3</exclude>
+						</excludes>
+					</resource>
+					
+					<resource>
+						<directory>src/test/resources/test_properties</directory>
+						<includes>
+							<includes>i1</includes>
+							<includes>i2</includes>
+							<includes>i3</includes>
+						</includes>
+						<excludes>
+							<exclude>e1</exclude>
+							<exclude>e2</exclude>
+							<exclude>e3</exclude>
+						</excludes>
+					</resource>
+				</resources>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

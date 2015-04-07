@@ -1,0 +1,27 @@
+<project>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-yaml-plugin</artifactId>
+				<configuration>
+					<resources>
+						<resource>
+							<directory>src/test/resources/test_properties</directory>
+							<includes>
+								<includes>properties.properties</includes>
+								<includes>otherproperties.properties</includes>
+							</includes>
+						</resource>	
+						<resource>
+							<directory>src/test/resources/test_properties/nested</directory>
+							<includes>
+								<includes>nested-properties.properties</includes>
+								<includes>nested-otherproperties.properties</includes>
+							</includes>
+						</resource>			
+					</resources>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
